@@ -1,0 +1,11 @@
+az login
+
+az group create --name "WebinarDemo2019" --location "eastus"
+
+az ad sp create-for-rbac --name aks-webinar2019
+
+az group deployment validate --name "ClusterDemo2019" --resource-group "WebinarDemo2019" --template-file "kube-managed.json"  --parameters "@kube-deploy.parameters.json" --name aks-demo
+az group deployment create --name "ClusterDemo2019" --resource-group "WebinarDemo2019" --template-file "kube-managed.json"  --parameters "@kube-deploy.parameters.json" --name aks-demo
+
+
+az group deployment delete --name aks-demo --resource-group "WebinarDemo2019"

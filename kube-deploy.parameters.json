@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "resourceName": {
+      "value": "aks-webinar2019"
+    },
+    "dnsPrefix": {
+      "value": "webinariac"
+    },
+    "linuxAdminUsername": {
+      "value": "Administrador"
+    },
+    "sshRSAPublicKey": {
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAiGEYRX95JFmL3n0eS3IrGG34GQuIUceiYHhX0upxduBv9oNSBavJEmVkyUE9nVf647uPduOFuPHkK/W9iVbk1vcs1bkVo+Pr3+pYeeXsxHELSHeIN29K9GFLo/oH/7dbcsby3lYyXafZaaJ7k098w+dgWX+masF25SV6Z/vO+JScB28mF1DTdZt9G4/aVVXiJdhN63xsr/6hnk+J1ns6n5wkob8LCbsAzC5PDubh7qwMi5alRBe0+hEL5KMYC1qO0t9aitsg26HqZoA3wmSMXqdeeRtYL2WYiuK7Xxq7pK6ndKxcaO798slrtfk8MaPTmzbaDBsDwI3rUZpgEDj2qw== rsa-key-20190305"
+    },
+    "servicePrincipalClientId": {
+      "value": "e9d4b563-74d9-4c6e-8466-a9b9e635253a"
+    },
+    "servicePrincipalClientSecret": {
+      "value": "52393bdb-57e9-4293-83b9-adc98fa9b7f6"
+    }
+  }
+}
